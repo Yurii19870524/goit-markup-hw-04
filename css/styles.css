@@ -182,7 +182,6 @@ section {
   padding: 192px 0;
   text-align: center;
   background-color: var(--color-item);
-  /* url(group-people-working-website-template.jpg); */
 }
 
 .hero-title {
@@ -416,7 +415,6 @@ section {
 
 .customers-icon {
   display: flex;
-  /* width: 104px; */
   height: 56px;
   fill: #8e8f99;
 }
