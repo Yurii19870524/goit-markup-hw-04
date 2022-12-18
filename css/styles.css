@@ -169,19 +169,20 @@ section {
 
 .overlay {
   max-width: 1440px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(46, 77, 66, 0.7), rgba(46, 77, 66, 0.7)),
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url('../images/people-office/office.jpg');
-  background-position: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .hero {
+  padding: 192px 0;
   text-align: center;
   background-color: var(--color-item);
+  /* url(group-people-working-website-template.jpg); */
 }
 
 .hero-title {
@@ -237,6 +238,7 @@ section {
   display: flex;
   width: 264px;
   height: 112px;
+  margin-bottom: 8px;
 
   justify-content: center;
   align-items: center;
@@ -313,10 +315,8 @@ section {
   height: 260px;
 }
 
-.fon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.team-content-wraper {
+  text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -331,7 +331,7 @@ section {
 }
 
 .team-position {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .team-position,
@@ -354,12 +354,8 @@ section {
 
 .social-list {
   display: flex;
-  padding: 4px 0px;
+  justify-content: center;
   gap: 24px;
-}
-
-.social-list-icon {
-  fill: black;
 }
 
 .social-list-item-link {
@@ -370,16 +366,12 @@ section {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #9747ff;
-}
-.social-list-item-link:focus,
-.social-list-item-link:hover {
-  background-color: tomato;
+  background-color: #4d5ae5;
 }
 
-.social-list-item-link:focus .social-list-icon,
-.social-list-item-link:hover .social-list-icon {
-  fill: #31d0aa;
+.social-list-item-link:hover,
+.social-list-item-link:focus {
+  background-color: #404bbf;
 }
 
 /* section-Customers */
@@ -388,6 +380,11 @@ section {
   display: flex;
   justify-content: center;
   gap: 24px;
+}
+
+.customers-item {
+  width: 168px;
+  height: 88px;
 }
 
 .customers-item:hover {
@@ -399,8 +396,8 @@ section {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  width: 168px;
-  height: 88px;
+  width: 100%;
+  height: 100%;
   fill: #8e8f99;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -508,6 +505,10 @@ section {
   fill: var(--color-active);
 }
 
+.footer-social-list-icon {
+  width: 24px;
+  height: 24px;
+}
 /*================PORTFOLIO==================*/
 
 .portfolio-main {
@@ -545,6 +546,8 @@ section {
 .motol-btn:focus {
   background-color: var(--color-active);
   color: var(--color-main);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .card-list {
@@ -594,13 +597,3 @@ section {
   letter-spacing: 0.02em;
   color: var(--color-information);
 }
-
-/* цвет іконок компаніі */
-/* 
- .social-color {
-  fill="#f4f4fd" style="fill: var(--color2, #f4f4fd)
- }  */
-
-/* .logo-color {
-  fill="#8e8f99" style="fill: var(--color3, #8e8f99)
-} */
